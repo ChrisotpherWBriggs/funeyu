@@ -8,3 +8,40 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+:root {
+    /* Typography */
+    --font-heading: 'Young Serif', Georgia, serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    /* Color palette */
+    --color-primary: #123f39;
+    --color-background: #f4eedc;
+    --color-text: #252525;
+}
+
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+button, input, select, textarea {
+    font-family: var(--font-body);
+    font-size: inherit;
+}
+
+nav {
+    font-family: var(--font-body);
+    font-weight: 600;
+}
