@@ -1,4 +1,111 @@
-<h1>This is the Home Page</h1>
+<div class="funeyu-home">
 
-<p><%= link_to 'Articles Index', articles_path %></p>
-<p><%= link_to 'About', about_path %></p>
+  <header class="home-masthead">
+
+    <div class="masthead-brand">
+      <%= image_tag "homepage/thinker.png",
+          class: "masthead-logo",
+          alt: "Funeyu" %>
+    </div>
+
+    <div class="masthead-login">
+      <form class="login-form">
+
+        <div class="login-fields">
+          <input type="text"
+                 class="form-control"
+                 placeholder="Username or Email"
+                 aria-label="Username or Email"
+                 autocomplete="username"
+                 disabled>
+
+          <input type="password"
+                 class="form-control"
+                 placeholder="Password"
+                 aria-label="Password"
+                 autocomplete="current-password"
+                 disabled>
+
+          <button type="button"
+                  class="btn btn-outline-light"
+                  disabled>
+            Log In
+          </button>
+        </div>
+
+        <div class="login-options">
+          <label>
+            <input type="checkbox" disabled>
+            Remember me
+          </label>
+
+          <span class="password-recovery">
+            Forgot your password?
+          </span>
+        </div>
+
+      </form>
+    </div>
+
+  </header>
+
+  <main class="home-hero">
+
+    <div class="hero-content">
+
+      <h1>
+        A space for<br>
+        thoughtful people.
+      </h1>
+
+      <p class="hero-introduction">
+        Write, discuss, and learn with a community
+        that values curiosity, depth and independent thought.
+      </p>
+
+      <div class="home-features">
+
+        <div class="home-feature">
+          <%= image_tag "homepage/write.png", alt: "" %>
+          <h2>Write</h2>
+          <p>Publish your ideas and explore the ideas of others.</p>
+        </div>
+
+        <div class="home-feature">
+          <%= image_tag "homepage/discuss.png", alt: "" %>
+          <h2>Discuss</h2>
+          <p>Join real-time conversations in our chat rooms.</p>
+        </div>
+
+        <div class="home-feature">
+          <%= image_tag "homepage/learn.png", alt: "" %>
+          <h2>Learn</h2>
+          <p>Watch and study in-depth lessons at Funeyu University.</p>
+        </div>
+
+      </div>
+
+      <div class="hero-actions">
+
+        <button type="button"
+                class="btn btn-primary btn-lg"
+                disabled>
+          Join Funeyu
+        </button>
+
+        <%= link_to "Learn More", about_path,
+            class: "btn btn-outline-primary btn-lg" %>
+
+      </div>
+
+    </div>
+
+    <div class="hero-landscape">
+    
+  		<%= image_tag "homepage/landscape.png", class: "landscape-image", alt: "" %>
+
+  	</div>
+
+  </main>
+
+</div>

@@ -1,0 +1,37 @@
+.article-card {
+  background-color: #f4eedc;
+  border: 1px solid #123f39;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .card-header {
+    background-color: #123f39;
+    color: #f4eedc;
+    padding: 1.5rem 2rem;
+
+    h1 {
+      font-family: $headings-font-family;
+      color: #f4eedc;
+      font-size: 2rem;
+      margin: 0;
+    }
+  }
+
+  .card-body {
+    background-color: #f4eedc;
+    padding: 5px;
+  }
+
+  .article-description {
+    border: 1px solid #123f39;
+    padding: 2rem;
+    min-height: 200px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #252525;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

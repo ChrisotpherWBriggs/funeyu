@@ -1,0 +1,23 @@
+// Sassy
+$dropdown-bg: #f4eedc;
+$dropdown-color: #123f39;
+$dropdown-border-color: #123f39;
+
+$dropdown-link-color: #123f39;
+$dropdown-link-hover-color: #f4eedc;
+$dropdown-link-hover-bg: #123f39;
+
+$dropdown-link-active-color: #f4eedc;
+$dropdown-link-active-bg: #123f39;
+
+$dropdown-divider-bg: rgba(18, 63, 57, 0.2);
+$dropdown-border-radius: 0.25rem;
+$dropdown-padding-y: 0.5rem;
+
+$primary: #123f39;
+$danger: #dc3545;
+
+@import "bootstrap";
+@import "custom";
+@import "homepage";
+@import "articles";
