@@ -35,3 +35,71 @@
     }
   }
 }
+
+.article-index {
+
+  h1 {
+    color: #123f39;
+    font-family: $headings-font-family;
+  }
+
+  .article-preview {
+    background-color: #f4eedc;
+    border: 1px solid #123f39;
+    border-radius: 4px;
+    overflow: hidden;
+
+    .card-header {
+      background-color: #123f39;
+      color: #f4eedc;
+      padding: 1.25rem;
+      border-bottom: none;
+
+      .card-title {
+        font-family: $headings-font-family;
+        font-size: 1.6rem;
+        margin-bottom: 0.25rem;
+
+        a {
+          color: #f4eedc;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .article-author {
+        font-size: 0.9rem;
+        font-style: italic;
+        opacity: 0.85;
+      }
+    }
+
+    .card-body {
+      background-color: #f4eedc;
+      padding: 5px;
+    }
+
+    .article-preview-content {
+      border: 1px solid #123f39;
+      padding: 1.5rem;
+
+      .card-text {
+        color: #252525;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    .card-footer {
+      background-color: #eae3cf;
+      color: #687b73;
+      border-top: 1px solid rgba(18, 63, 57, 0.2);
+      padding: 0.75rem;
+      font-size: 0.85rem;
+    }
+  }
+}
